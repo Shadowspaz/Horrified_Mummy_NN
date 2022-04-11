@@ -49,7 +49,7 @@ At any point, the user can press the space bar to watch the highest-rated networ
 
 ### Conclusions
 
-In my testing, it appears that every puzzle can be solved in 19 moves or less, and it will take anywhere between 200 and 500 generation to reach an optimal state. This is not an efficient neural network by any means, but as a proof of concept and a first draft working with neural networks, I'm really happy with the results.
+In my testing, it appears that every puzzle can be solved in 19 moves or less, and it will take anywhere between 200 and 500 generations to reach an optimal state. This is not an efficient neural network by any means, but as a proof of concept and a first draft working with neural networks, I'm really happy with the results.
 
 ---
 
