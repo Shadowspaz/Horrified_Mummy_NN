@@ -4,7 +4,7 @@ This was my first neural network project, built to solve a simple sliding-piece 
 
 ![Puzzle Example](https://user-images.githubusercontent.com/6518580/162818854-8a637bfc-b08d-4901-84b3-36c2d5423890.png)
 
-The goal is to slide the green-numbered pieces across the lines, shuffling them to get the tiles next to the appropriately-numbered spaces.
+The goal is to slide the green numbered pieces across the lines, shuffling them to get the tiles next to the appropriately-numbered spaces.
 
 ---
 
@@ -18,8 +18,8 @@ And 6 outputs, which determines which piece to move: 1-6. No direction is needed
 
 The fitness algorithm is a combination of two values: How many moves it took, and how "solved" the puzzle was.
 - With an upper limit of 50 moves, the first part of the fitness score is simply the inverse of moves taken. 10/50 moves results in a 40/50 score, or 0.8.
-- The second part is the change in cumulative distance from the start of the puzzle to the  end state. For a win, the cumulative distance would be zero, resulting in a score of 1. If it stayed just as scrambled as it did at the start, it would be a score of zero, and if it somehow became _more_ scrambled, this score could be negative.
-- The average of these two scores returns the overall fitness value, and as the puzzles are consistently solved, the only difference from one neural network to the next will be how efficiently it can be solved.
+- The second part is the change in cumulative distance from the start of the puzzle to the end state. For a win, the cumulative distance would be zero, resulting in a score of 1. If it stayed just as scrambled as it did at the start, it would be a score of 0, and if it somehow became _more_ scrambled, this score could be negative.
+- The average of these two scores returns the overall fitness value, and as the puzzles are more consistently solved over generations, the only difference from one neural network to the next will be how efficiently it can be solved.
 
 ---
 
@@ -49,7 +49,7 @@ At any point, the user can press the space bar to watch the highest-rated networ
 
 ### Conclusions
 
-In my testing, it appears that every puzzle can be solved in 19 moves or less, and it will take anywhere between 200 and 500 generations to reach an optimal state. This is not an efficient neural network by any means, but as a proof of concept and a first draft working with neural networks, I'm really happy with the results.
+In my testing, it appears that every puzzle can be solved in 19 moves or less, and it will take anywhere between 200 and 500 generations to reach an optimal state. This is not an efficient neural network by any means, but as a proof of concept and a first draft working with the process, I'm really happy with the results.
 
 ---
 
